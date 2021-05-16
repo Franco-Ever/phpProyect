@@ -1,0 +1,164 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 05, 2021 at 11:07 PM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 8.0.3
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `starphuyu`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `atencion`
+--
+
+CREATE TABLE `atencion` (
+  `ci` int(11) NOT NULL,
+  `nombres` varchar(80) NOT NULL,
+  `correos` varchar(30) NOT NULL,
+  `telefonos` int(30) NOT NULL,
+  `clientes` varchar(5) NOT NULL,
+  `preguntas` varchar(30) noy NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `planes_internet`
+--
+
+CREATE TABLE `planes_internet` (
+  `casilla` int(10) NOT NULL,
+  `plan` varchar(20) NOT NULL,
+  `velocidad_anterior` varchar(20) NOT NULL,
+  `velocidad_nueva` varchar(20) NOT NULL,
+  `tarifaz` DOUBLE(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `planes_internet`
+--
+
+INSERT INTO `planes_internet` (`casilla`, `plan`, `velocidad_anterior`, `velocidad_nueva`, `tarifaz`) VALUES
+(0, '', '', '', 0),
+(1, 'FOH-SOL', 'N/A', '5 Mbs	', 90),
+(2, 'FOH-200	', '12 Mbps	', '15 Mbps	', 143),
+(3, 'FOH-300	', '25 Mbps	', '35 Mbps	', 187),
+(4, 'FOH-500	', '35 Mbps	', '50 Mbps	', 262),
+(5, 'FOH-800	', '40 Mbps	', '58 Mbps	', 299),
+(6, 'FOH-10M	', '45 Mbps	', '68 Mbps	', 346),
+(7, 'FOH-30M	', '60 Mbps	', '87 Mbps	', 442),
+(8, 'FOH-50M	', '100 Mbps	', '138 Mbps	', 698),
+(9, 'FOH-60M	', '120 Mbps	', '166 Mbps	', 840),
+(10, 'FOH-80M	', '150 Mbps	', '207 Mbps	', 1.047),
+(11, 'FOH-100M	', '200 Mbps	', '262 Mbps	', 1.326),
+(12, 'FOH-200M	', '400 Mbps	', '500 Mbps	', 2.520);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `solicitud`
+--
+
+CREATE TABLE `solicitud` (
+  `identidades` int(10) NOT NULL,
+  `planes` varchar(80) NOT NULL,
+  `nombres` varchar(30) NOT NULL,
+  `apellidos` varchar(30) NOT NULL,
+  `razones` varchar(30) DEFAULT NULL,
+  `correos` varchar(30) NOT NULL,
+  `telefonofijo` int(10) NOT NULL,
+  `telefonocelular` int(10) DEFAULT NULL,
+  `telefonooficina` int(10) DEFAULT NULL,
+  `celularoficina` int(10) DEFAULT NULL,
+  `fechacontratacion` date NOT NULL,
+  `latitud` varchar(30) NOT NULL,
+  `longitud` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `solicitud`
+--
+
+INSERT INTO `solicitud` (`identidades`, `planes`, `nombres`, `apellidos`, `razones`, `correos`, `telefonofijo`, `telefonocelular`, `telefonooficina`, `celularoficina`, `fechacontratacion`, `latitud`, `longitud`) VALUES
+(0, '', '', '', '', '', 0, 0, 0, 0, '0000-00-00', '-17.384718693806953', '-66.34944225976562'),
+(9231252, '[FOH 50M] -- [138 Mbs] -- [698] -- [3]', 'Ever', 'FRANCO', '', 'ever@gmail.com', 73768544, 0, 0, 0, '2021-05-14', '-17.389633224632487', '-66.33845593164062');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `solicitudpaquete`
+--
+
+CREATE TABLE `solicitudpaquete` (
+  `identidades` int(10) NOT NULL,
+  `planes` varchar(80) NOT NULL,
+  `nombres` varchar(30) NOT NULL,
+  `apellidos` varchar(30) NOT NULL,
+  `razones` varchar(30) DEFAULT NULL,
+  `correos` varchar(30) NOT NULL,
+  `telefonofijo` int(10) NOT NULL,
+  `telefonocelular` int(10) DEFAULT NULL,
+  `telefonooficina` int(10) DEFAULT NULL,
+  `celularoficina` int(10) DEFAULT NULL,
+  `fechacontratacion` date NOT NULL,
+  `latitud` varchar(30) NOT NULL,
+  `longitud` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `solicitudpaquete`
+--
+
+INSERT INTO `solicitudpaquete` (`identidades`, `planes`, `nombres`, `apellidos`, `razones`, `correos`, `telefonofijo`, `telefonocelular`, `telefonooficina`, `celularoficina`, `fechacontratacion`, `latitud`, `longitud`) VALUES
+(5545454, '[Internet + TV] -- [20 Mbs] -- [470.00] -- [3]', 'Ever', 'FRANCO', '', 'ever@gmail.com', 73768544, 0, 0, 0, '2021-05-13', '-17.397496199346172', '-66.32025982568359'),
+(5545454, '[Internet + TV] -- [20 Mbs] -- [470.00] -- [3]', 'Hernan', 'FRANCO', 'Universidad', 'hernan@gmail.com', 73768544, 1414141, 2541414, 1414122, '2021-05-20', '-17.379804030997903', '-66.27494122216797');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tvsolicitud`
+--
+
+CREATE TABLE `tvsolicitud` (
+  `identidades` int(10) NOT NULL,
+  `planes` varchar(80) NOT NULL,
+  `nombres` varchar(30) NOT NULL,
+  `apellidos` varchar(30) NOT NULL,
+  `razones` varchar(30) DEFAULT NULL,
+  `correos` varchar(30) NOT NULL,
+  `telefonofijo` int(10) NOT NULL,
+  `telefonocelular` int(10) DEFAULT NULL,
+  `telefonooficina` int(10) DEFAULT NULL,
+  `celularoficina` int(10) DEFAULT NULL,
+  `fechacontratacion` date NOT NULL,
+  `latitud` varchar(30) NOT NULL,
+  `longitud` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tvsolicitud`
+--
+
+INSERT INTO `tvsolicitud` (`identidades`, `planes`, `nombres`, `apellidos`, `razones`, `correos`, `telefonofijo`, `telefonocelular`, `telefonooficina`, `celularoficina`, `fechacontratacion`, `latitud`, `longitud`) VALUES
+(9231252, '[HBO PREMIUM] -------- [50.00] -- [3]', 'Ever', 'FRANCO', '', 'ever@gmail.com', 73768544, 0, 0, 0, '2021-05-20', '-17.382752844519533', '-66.34532238671875');
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
