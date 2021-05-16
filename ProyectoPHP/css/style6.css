@@ -1,0 +1,173 @@
+@font-face{
+    font-family: "fuente1";
+    src:url(../fonts/SKETCHUP\ FREE\ TRIAL.ttf);
+}
+@font-face{
+    font-family: "fuente2";
+    src:url(../fonts/La\ Formalita.otf);
+}
+@font-face{
+    font-family: "fuente3";
+    src:url(../fonts/THE\ HAMPHA.ttf);
+}
+.header{
+    background-image:linear-gradient(
+        to right,
+        hsla(0, 0%, 2%, 0.795),
+        hsla(0, 0%, 0%, 0.329)
+    ), url('../img/fondo5.png');
+    background-size: cover;
+    min-height: 900px;
+    width: 100%;
+   
+}
+.navbar{
+    background: none;
+    align-items: center;
+}
+.opciones{
+    color: rgb(199, 199, 199);
+    border-radius: 5px;
+}
+.texto p{
+    color: rgb(199, 199, 199);
+    padding: 12px;
+}
+
+.texto1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 8rem;
+    font-family: "fuente1";
+}
+.wave {
+    margin: -100px 0;
+}
+.pdf{
+    text-align: center;
+}
+iframe{
+    width: 80%;
+    height: 125vh;
+    text-align: center;
+}
+.container .pdf{
+    width: 90%;
+    max-width: 2050px;
+    margin: 0 auto;
+}
+
+#footer{
+    background: #2e2e2e;
+    width: 100%;
+    height: auto;
+}
+#pie-footer{
+    background: #000;
+    width: 100%;
+    height: auto;
+}
+.titulo-footer{
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top: 1px;
+}
+.span-subtitulo{
+    color: rgb(244, 246, 85);
+    font-weight: 500;
+}
+.contacto{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 35px;
+    font-weight: 800;
+}
+.titulo-contacto li span a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#localizacion{
+    color: yellow;
+    font-size: 25px;
+}
+.titulo-colonia{
+    color: #fff;
+    margin-left: 25px;
+}
+
+#fondo-footer{
+    background: #2e2e2e;
+    width: 100%;
+    height: 50px;
+}
+.logo-pie{
+    text-align: center;
+}
+.logo-pie a img{
+    padding: 10px;
+    width: 200px;
+}
+
+
+
+@media (max-width: 575.98px) {
+    .opciones{
+        color: #000;
+        border-radius: 5px;
+    }
+    .texto1 {
+        font-size: 2rem;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    .header{
+        min-height: 700px;
+        width: 100%;
+       
+    }
+    .titulos h5{
+        color:#000;
+    }
+    .tamaño{
+        height: 170px;
+    }
+    .opciones{
+        color: #000;
+    }
+    .container .pdf{
+        width: 100%;
+        max-width: 8000px;
+        
+    }
+    
+    
+
+}
+
+
+@media (max-width: 780.98px) {
+    
+    .texto1{
+        font-size: 5rem;
+    }
+    .cuadro{
+        height:400px;
+    }
+    .logo{
+        width: 100%;
+    }
+    
+    
+} 
+@media (max-width: 320.98px) {
+    
+    .texto1{
+        font-size: 3rem;
+    }
+} 

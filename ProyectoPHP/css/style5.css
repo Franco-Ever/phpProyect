@@ -1,0 +1,228 @@
+@font-face{
+    font-family: "fuente1";
+    src:url(../fonts/SKETCHUP\ FREE\ TRIAL.ttf);
+}
+@font-face{
+    font-family: "fuente2";
+    src:url(../fonts/La\ Formalita.otf);
+}
+@font-face{
+    font-family: "fuente3";
+    src:url(../fonts/THE\ HAMPHA.ttf);
+}
+.header{
+    background-image:linear-gradient(
+        to right,
+        hsla(0, 0%, 2%, 0.466),
+        hsla(0, 0%, 0%, 0.897)
+    ), url('../img/fondo4.jpg');
+    background-size: cover;
+    min-height: 900px;
+    width: 100%;
+   
+}
+.navbar{
+    background: none;
+    align-items: center;
+}
+.opciones{
+    color: rgb(199, 199, 199);
+    border-radius: 5px;
+}
+.texto p{
+    color: rgb(199, 199, 199);
+    padding: 12px;
+}
+
+.texto1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 8rem;
+    font-family: "fuente1";
+}
+.wave {
+    margin: -100px 0;
+}
+
+
+figure img{
+    border-radius: 10px;
+}
+.deta{
+    text-align: center;
+    align-items: center;
+    
+}
+.deta h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #676581;
+}
+.deta p{
+    font-family: 'Times New Roman', Times, serif;
+    color: #676581;
+    font-size: 1rem;
+}
+
+.deta1{
+    text-align: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.deta1 h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #676581;
+}
+.deta1 p{
+    font-family: 'Times New Roman', Times, serif;
+    color: #676581;
+    font-size: 1rem;
+}
+#footer{
+    background: #2e2e2e;
+    width: 100%;
+    height: auto;
+}
+#pie-footer{
+    background: #000;
+    width: 100%;
+    height: auto;
+}
+.titulo-footer{
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top: 1px;
+}
+.span-subtitulo{
+    color: rgb(244, 246, 85);
+    font-weight: 500;
+}
+.contacto{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 35px;
+    font-weight: 800;
+}
+.titulo-contacto li span a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#localizacion{
+    color: yellow;
+    font-size: 25px;
+}
+.titulo-colonia{
+    color: #fff;
+    margin-left: 25px;
+}
+
+#fondo-footer{
+    background: #2e2e2e;
+    width: 100%;
+    height: 50px;
+}
+.logo-pie{
+    text-align: center;
+}
+.logo-pie a img{
+    padding: 10px;
+    width: 200px;
+}
+
+
+
+@media (max-width: 575.98px) {
+    .opciones{
+        color: #000;
+        border-radius: 5px;
+    }
+    .texto1 {
+        font-size: 1rem;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    .header{
+        min-height: 700px;
+        width: 100%;
+       
+    }
+    .titulos h5{
+        color:#000;
+    }
+    .tamaño{
+        height: 170px;
+    }
+    .opciones{
+        color: #000;
+    }
+    .deta1{
+        display: table-row;
+    }
+    .deta{
+        display: table-row;
+    }
+    .deta h1{
+        font-size: 1rem;
+    }
+    .deta p{
+        font-size: 0.3rem;
+    }
+    .deta1 h1{
+        font-size: 1rem;
+    }
+    .deta1 p{
+        font-size: 0.3rem;
+    }
+    .container{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+@media (max-width: 780.98px) {
+    
+    .texto1{
+        font-size: 3rem;
+    }
+    .cuadro{
+        height:400px;
+    }
+    .logo{
+        width: 100%;
+    }
+    .deta1{
+        display: table-row;
+    }
+    .deta{
+        display: table-row;
+    }
+    .deta h1{
+        font-size: 1rem;
+    }
+    .deta p{
+        font-size: 0.8rem;
+    }
+    .deta1 h1{
+        font-size: 1rem;
+    }
+    .deta1 p{
+        font-size: 0.8rem;
+    }
+   
+
+    
+} 
+@media (max-width: 320.98px) {
+    
+    .texto1{
+        font-size: 3rem;
+    }
+} 

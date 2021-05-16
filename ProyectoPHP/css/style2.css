@@ -1,0 +1,242 @@
+@font-face{
+    font-family: "fuente1";
+    src:url(../fonts/Happy\ Now.otf);
+}
+@font-face{
+    font-family: "fuente2";
+    src:url(../fonts/SKETCHUP\ FREE\ TRIAL.ttf);
+}
+.header{
+    background-image:linear-gradient(
+        to right,
+        hsla(0, 0%, 2%, 0.37),
+        hsla(0, 0%, 0%, 0.329)
+    ), url('../img/fondo2.jpg');
+    background-size: cover;
+    min-height: 900px;
+    width: 100%;
+   
+}
+.navbar{
+    background: none;
+    align-items: center;
+}
+.opciones{
+    color: rgb(199, 199, 199);
+    border-radius: 5px;
+}
+.texto p{
+    color: rgb(199, 199, 199);
+    padding: 12px;
+}
+.texto1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 8rem;
+    font-family: "fuente2";
+}
+.buton-texto1{
+    text-align: center;
+    font-size:2rem ;
+    text-decoration: none;
+}
+.wave {
+    margin: -100px 0;
+}
+.titulo-fibra{
+    color:#676581 ;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+figure img{
+    border-radius: 10px;
+}
+.deta{
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.deta h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #676581;
+}
+.deta p{
+    font-family: 'Times New Roman', Times, serif;
+    color: #676581;
+    font-size: 1rem;
+    list-style: none;
+}
+.deta p:hover{
+    transition: all 0.5s;
+    transform: scale(1.1);
+    color: rgb(126, 29, 206);
+}
+
+.texto-table{
+    text-align: center;
+    color: #676581;
+    font-family: 'Times New Roman', Times, serif;
+}
+.columns{
+    background: linear-gradient(
+        to right,
+        hsla(0, 0%, 2%, 0.932),
+        hsla(0, 0%, 0%, 0.164)
+    );
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "fuente1";
+}
+#footer{
+    background: #2e2e2e;
+    width: 100%;
+    height: auto;
+}
+#pie-footer{
+    background: #000;
+    width: 100%;
+    height: auto;
+}
+.titulo-footer{
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top: 1px;
+}
+.span-subtitulo{
+    color: rgb(244, 246, 85);
+    font-weight: 500;
+}
+.contacto{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 35px;
+    font-weight: 800;
+}
+.titulo-contacto li span a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#localizacion{
+    color: yellow;
+    font-size: 25px;
+}
+.titulo-colonia{
+    color: #fff;
+    margin-left: 25px;
+}
+
+#fondo-footer{
+    background: #2e2e2e;
+    width: 100%;
+    height: 50px;
+}
+.logo-pie{
+    text-align: center;
+}
+.logo-pie a img{
+    padding: 10px;
+    width: 200px;
+}
+
+
+
+@media (max-width: 575.98px) {
+    .opciones{
+        color: #000;
+        border-radius: 5px;
+    }
+    .texto1 h1{
+        font-size: 4rem;
+    }
+    .buton-texto1{
+        font-size: 1rem;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    .header{
+        min-height: 700px;
+        width: 100%;
+       
+    }
+    .titulos h5{
+        color:#000;
+    }
+    .tamaño{
+        height: 170px;
+    }
+    .opciones{
+        color: #000;
+    }
+
+    .deta{
+        display: table-row;
+    }
+    .deta h1{
+        font-size: 1rem;
+    }
+    .deta p{
+        font-size: 0.5rem;
+    }
+    .container{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .columns{
+        font-size: 1rem;
+    }
+    .texto p{
+        color: rgb(43, 42, 42);
+    }
+
+}
+
+
+@media (max-width: 780.98px) {
+    
+    .texto1{
+        font-size: 5rem;
+    }
+    .cuadro{
+        height:400px;
+    }
+    .logo{
+        width: 100%;
+    }
+    .video h5{
+        font-size: 1.8rem;
+    }
+    .video p{
+        font-size: 1rem;
+    }
+    .deta1{
+        display: table-row;
+    }
+    .deta{
+        display: table-row;
+    }
+    .deta h1{
+        font-size: 1.9rem;
+    }
+    .deta p{
+        font-size: 1rem;
+    }
+    .deta1 h1{
+        font-size: 1.9rem;
+    }
+    .deta1 p{
+        font-size: 1rem;
+    }
+   
+
+    
+} 
